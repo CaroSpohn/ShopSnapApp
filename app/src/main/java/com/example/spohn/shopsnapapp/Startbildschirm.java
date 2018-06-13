@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
+import android.widget.ImageView;
 
 public class Startbildschirm extends AppCompatActivity {
 
@@ -14,6 +15,7 @@ public class Startbildschirm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         setContentView(R.layout.activity_startbildschirm);
+
 
     }
     public void buttonclick1 (View aView) {
