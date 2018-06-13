@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.spohn.shopsnapapp.Einkaufsliste"
-    android:background="@drawable/einkaufszentrum">
+    android:background="@drawable/background">
 
     <RelativeLayout
         android:layout_width="match_parent"

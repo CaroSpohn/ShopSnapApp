@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ShopSnapApp.iml" filepath="$PROJECT_DIR$/ShopSnapApp.iml" />
+      <module fileurl="file://C:\Users\spohn\AndroidStudioProjects\ShopSnapApp-Kopie\ShopSnapApp.iml" filepath="C:\Users\spohn\AndroidStudioProjects\ShopSnapApp-Kopie\ShopSnapApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ShopSnapApp-Kopie.iml" filepath="$PROJECT_DIR$/.idea/ShopSnapApp-Kopie.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
