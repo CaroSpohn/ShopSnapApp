@@ -33,5 +33,13 @@
         android:layout_above="@+id/button_image"
         android:layout_centerHorizontal="true"
         android:text="OK" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp"
+        android:layout_toEndOf="@+id/button_image" />
 </RelativeLayout>
 
