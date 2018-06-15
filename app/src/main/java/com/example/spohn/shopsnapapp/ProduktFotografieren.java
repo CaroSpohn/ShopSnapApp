@@ -74,6 +74,8 @@ public class ProduktFotografieren extends AppCompatActivity {
                 "IMG_"+ timeStamp + ".jpg");
     }
 
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 100) {

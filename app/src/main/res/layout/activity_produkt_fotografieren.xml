@@ -9,20 +9,29 @@
     android:background="@drawable/background">
 
 
-        <ImageView
-            android:id="@+id/imageview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_above="@+id/button_image"/>
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:drawable/ic_menu_camera" />
 
-        <Button
-            android:id="@+id/button_image"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:onClick="takePicture"
-            android:text="Take a picture!"/>
-    </RelativeLayout>
+    <Button
+        android:id="@+id/button_image"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:onClick="takePicture"
+        android:text="Erneut Aufnehmen" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_image"
+        android:layout_centerHorizontal="true"
+        android:text="OK" />
+</RelativeLayout>
 
