@@ -25,7 +25,7 @@ public class Startbildschirm extends AppCompatActivity {
     }
     public void buttonclick1 (View aView) {
         if (ContextCompat.checkSelfPermission(getBaseContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED) {
-            ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.CAMERA}, 001); }
+            ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.CAMERA}, 002); }
             else{
         Intent intent = new Intent(this, ProduktFotografieren.class);
         startActivity(intent);}
