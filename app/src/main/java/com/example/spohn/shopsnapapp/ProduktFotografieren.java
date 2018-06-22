@@ -3,6 +3,7 @@ package com.example.spohn.shopsnapapp;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -73,6 +74,15 @@ public class ProduktFotografieren extends AppCompatActivity {
         intent.putExtra(MediaStore.EXTRA_OUTPUT, file);
 
         startActivityForResult(intent, 100);
+    }
+
+    public void usePicture (View view) {
+        Intent intent = new Intent(this, ProduktAnzeigen.class);
+
+        intent.putExtra("file",file);
+        startActivity(intent);
+
+
     }
 
     private static File getOutputMediaFile(){

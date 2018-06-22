@@ -7,7 +7,7 @@
     tools:context="com.example.spohn.shopsnapapp.ProduktAnzeigen"
     android:background="@drawable/background">
 
-    <RelativeLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,105 +17,121 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="70dp"
-            app:srcCompat="@mipmap/ic_launcher" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="487dp"
+        android:layout_height="445dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="58dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="22dp"
-            android:background="@color/secondaryColor"
-            android:onClick="buttonclick7"
-            android:text="Bild verwerfen" />
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginStart="200dp"
+        android:background="@drawable/button"
+        android:onClick="buttonclick7"
+        android:text="Bild verwerfen"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/button11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/button10"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="15dp"
-            android:background="@color/secondaryColor"
-            android:onClick="buttonclick6"
-            android:text="Auf Einkaufsliste setzen" />
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button10"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="47dp"
+        android:background="@drawable/button"
+        android:onClick="buttonclick6"
+        android:text="Auf Einkaufsliste setzen"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button12" />
 
-        <Button
-            android:id="@+id/button12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/button11"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="15dp"
-            android:background="@color/secondaryColor"
-            android:text="Sofort kaufen" />
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginStart="47dp"
+        android:background="@drawable/button"
+        android:text="Sofort kaufen"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/button11"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/button12"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="23dp"
-            android:text="Name des Produkts"
-            android:textColor="@color/secondaryColor"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="233dp"
+        android:layout_marginEnd="270dp"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="26dp"
+        android:text="Name"
+        android:textColor="@color/secondaryColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/textView2"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="96dp"
-            android:layout_marginStart="17dp"
-            android:text="Anzahl"
-            android:textColor="@color/secondaryColor"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginBottom="79dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="103dp"
+        android:text="Preis"
+        android:textColor="@color/secondaryColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberPicker2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView5"
-            android:layout_alignBottom="@+id/textView5"
-            android:layout_alignEnd="@+id/textView7"
-            android:text="Preis"
-            android:textColor="@color/secondaryColor"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+    <NumberPicker
+        android:id="@+id/numberPicker2"
+        android:layout_width="50dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="79dp"
+        android:background="@color/secondaryColor"
+        android:solidColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/textView6"
-            android:layout_marginEnd="18dp"
-            android:layout_marginTop="33dp"
-            android:text="Preis des Produktes"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="24sp"
-            android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/textView7"
-            android:layout_alignStart="@+id/numberPicker"
-            android:ems="10"
-            android:inputType="number" />
-
-    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

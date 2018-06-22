@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,28 +12,51 @@
 
     <ImageView
         android:id="@+id/imageview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="603dp"
+        android:layout_height="670dp"
         android:layout_centerInParent="true"
-        android:background="@android:drawable/ic_menu_camera" />
+        android:background="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_image"
-        android:layout_width="wrap_content"
+        android:layout_width="163dp"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button"
         android:onClick="takePicture"
-        android:text="Erneut Aufnehmen" />
+        android:text="Erneut aufnehmen"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
         android:layout_above="@+id/button_image"
         android:layout_centerHorizontal="true"
-        android:text="OK" />
+        android:layout_marginEnd="219dp"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/button"
+        android:onClick="usePicture"
+        android:text="OK"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/button_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview" />
 
     <TextView
         android:id="@+id/text"
@@ -41,5 +65,5 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="78dp"
         android:layout_toEndOf="@+id/button_image" />
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
 
