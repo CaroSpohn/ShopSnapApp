@@ -30,5 +30,14 @@ public class Einkaufsliste extends AppCompatActivity {
         canvas.drawRoundRect((new RectF(0, 0, mbitmap.getWidth(), mbitmap.getHeight())), 100, 100, mpaint);// Round Image Corner 100 100 100 100
         mimageView.setImageBitmap(imageRounded);
         // Ende "runde Ecken bei ImageView"
+
+        //Datenbank
+
+        DatenbankLabels tom = new DatenbankLabels();
+        DatenbankMethoden db = new DatenbankMethoden(this);
+
+        db.insert(tom);
+
+        System.out.println("bliblu "+db.getStudentList());
     }
 }
