@@ -172,4 +172,16 @@ ImageView imageView = findViewById(R.id.imageview);
         } catch (JSONException e) {
             e.printStackTrace();
         }
-    }}
+    }
+//Datenbank aufrufen
+/*    setContentView(R.layout.activity_main);
+
+    Student tom = new Student();
+    StudentRepo db = new StudentRepo(this);
+
+        db.insert(tom);
+
+        System.out.println("bliblu "+db.getStudentList()); */
+
+
+}
